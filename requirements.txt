@@ -1,0 +1,8 @@
+# Exact versions that were tested together (Python 3.11 – 3.13).
+# To upgrade: change a version, run `pytest`, then `streamlit run streamlit_app.py`.
+streamlit==1.65.0
+streamlit-folium==0.27.4
+folium==0.20.0
+earthengine-api==1.7.47
+pandas==3.0.6
+plotly==7.1.0

@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=8
+cryptography>=42   # used by one test to build a realistic broken key

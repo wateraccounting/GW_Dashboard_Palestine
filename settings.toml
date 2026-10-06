@@ -1,0 +1,55 @@
+# =====================================================================
+#  Dashboard settings – Jericho, Palestine
+#  This is the only file you normally need to edit.
+#  After editing, run `pytest` (checks this file) and push to GitHub.
+# =====================================================================
+
+[site]
+country_en = "Palestine"
+country_ar = "فلسطين"
+region_en = "Jericho"
+region_ar = "أريحا"
+organisation = "IHE Delft Institute for Water Education"
+contact = ""                      # e.g. an e-mail address shown under "About"
+default_language = "en"           # "en" or "ar"
+
+[gee]
+# Earth Engine folder with the monthly images, named <parameter>_YYYY_MM.
+# Can be overridden WITHOUT editing this file: Streamlit Secrets -> [gee] asset_folder = "..."
+asset_folder = "projects/steel-sonar-428908-v8/assets/GW_Analysis_Jericho"
+# project = ""                    # optional GEE project used for computation
+                                  # (default: the project of the service-account key)
+pixel_scale_m = 20                # native pixel size in metres (used for point time series)
+stats_scale_m = 100               # resolution for map statistics (larger = faster)
+
+[map]
+center_lat = 31.971
+center_lon = 35.466
+zoom = 11
+
+# One block per layer. `key` must equal the start of the image names.
+# Optional: vis_min / vis_max = fixed colour-scale limits for every month.
+
+[[parameters]]
+key = "abstraction_mm"
+label_en = "Abstraction – depth"
+label_ar = "السحب – العمق"
+unit = "mm/month"
+unit_ar = "مم/شهر"
+palette = ["#2b83ba", "#abdda4", "#ffffbf", "#fdae61", "#d7191c"]
+
+[[parameters]]
+key = "abstraction_m3"
+label_en = "Abstraction – volume per 20 m pixel"
+label_ar = "السحب – الحجم لكل بكسل 20 م"
+unit = "m³/month"
+unit_ar = "م³/شهر"
+palette = ["#313695", "#4575b4", "#74add1", "#abd9e9", "#e0f3f8", "#ffffbf", "#fee090", "#fdae61", "#f46d43", "#d73027"]
+
+[[parameters]]
+key = "recharge"
+label_en = "Recharge"
+label_ar = "التغذية"
+unit = "mm/month"
+unit_ar = "مم/شهر"
+palette = ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee08b", "#ffffbf", "#d9ef8b", "#a6d96a", "#66bd63", "#1a9850"]
