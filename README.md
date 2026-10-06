@@ -1,5 +1,7 @@
 # 💧 Groundwater Analysis Dashboard – Jericho, Palestine
 
+[![tests](https://github.com/wateraccounting/GW_Dashboard_Palestine/actions/workflows/tests.yml/badge.svg)](https://github.com/wateraccounting/GW_Dashboard_Palestine/actions/workflows/tests.yml) ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue) ![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
 Interactive web dashboard showing **monthly groundwater abstraction and recharge** for
 **Jericho (Palestine)**, computed with Google Earth Engine (GEE) and served with
 [Streamlit](https://streamlit.io).
